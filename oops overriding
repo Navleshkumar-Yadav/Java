@@ -1,0 +1,41 @@
+class Parent {
+        public void property(){
+                System.out.println("Land+Cash+Gold");
+        }
+        public void marry(){
+                System.out.println("RelativeGirl");
+        }
+
+        
+}
+
+class Child extends Parent {
+        public void marry(){
+                System.out.println("Something Girl...");
+        }
+
+
+
+
+        
+}
+
+public class Ram {
+
+        public static void main(String[] args) {
+                Parent p1 = new Parent();
+                p1.property();
+                p1.marry();
+                System.out.println();
+                Child c1 = new Child();
+                c1.property();
+                c1.marry();
+                System.out.println();
+                Parent p2 = new Parent();
+                p2.property();
+                p2.marry();
+
+        
+        }
+        
+}
