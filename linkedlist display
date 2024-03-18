@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+class LinkedList{
+        Node head;
+        Node tail;
+        // LinkedList(int head){
+        //         this.head= head;
+        // }
+        void insertAtEnd(int val){
+                Node temp = new Node(val);
+                if(head == null){
+                        head = tail = temp;
+                        
+
+                }
+                else{
+                        tail.next = temp;
+                        tail = temp;
+                }
+        }
+        void display(){
+                Node temp = head;
+                while(temp!=null){
+                        System.out.println(temp.val);
+                        temp = temp.next;
+                }
+                System.out.println();
+
+        }
+}
+public class Sankar {
+
+        public static void main(String[] args) {
+                LinkedList n = new LinkedList();
+                n.insertAtEnd(10);
+
+                n.insertAtEnd(20);
+                n.insertAtEnd(30);
+                n.insertAtEnd(60);
+                n.insertAtEnd(70);
+                n.display();
+              
+        }
+}
