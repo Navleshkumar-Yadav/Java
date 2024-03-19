@@ -1,0 +1,35 @@
+class Dog{
+        // Instance variable
+        private String bread;
+        private float age;
+        private int price;
+        // local variable as instance variable
+        public void setDog(String bread, float age ,int price){
+                // super()      ;            // it is used of of calss set and getter
+                this.bread = bread; // this keyword is used to redirect the instance variable
+                this.age = age;
+                this.price = price;
+        }
+        public String getBread() {   // Get keyword is used to return output,
+                return bread;
+        }
+        public float getAge(){
+                return age;
+        }
+        public int getprice(){
+                return price;
+        }
+}
+
+public class Ram {
+        public static void main(String[] args) {
+                Dog d = new Dog();
+                d.setDog("Pug", 4.5f, 4500);
+                System.out.println(d.getBread());
+                System.out.println(d.getAge());
+                System.out.println(d.getprice());
+                
+        }
+
+        
+}
