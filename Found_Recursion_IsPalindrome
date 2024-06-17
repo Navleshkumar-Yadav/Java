@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.io.*;
+import java.util.regex.*;
+import java.text.*;
+import java.math.*;
+public class Ramkaran {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String sb = sc.nextLine();
+        int n = sb.length();
+        char [] arr = new char[n];
+        for(int i = 0 ; i<n ; i++){
+            if(sb.charAt(i)>='A' && sb.charAt(i)<='Z'){
+                arr[i] = (char)(sb.charAt(i) + 32);
+         
+            }
+            else{
+                arr[i] = sb.charAt(i);
+                
+            }
+        }
+        int sp = 0 ;
+        int ep = n-1;
+        while(sp<ep){
+            if(arr[sp]!=arr[ep]){
+                System.out.println("false");
+                return;
+            }
+            sp++;
+            ep--;
+        }
+        System.out.println("true");
+    }
+}
