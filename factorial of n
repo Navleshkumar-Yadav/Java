@@ -1,0 +1,28 @@
+// import java.util.*;
+// import java.io.*;
+// import java.text.*;
+// import java.util.regex.*;
+// import java.math.*;
+// import java.util.Scanner;
+// public class Recursion {
+
+//         public static void main(String[] args) {
+//                 Scanner sc = new Scanner(System.in);
+//                 System.out.print("Enter the number: ");
+//                 int n = sc.nextInt();
+//                 int ans = fact(n);
+//                 System.out.println(ans);
+//         }
+//         public static int fact(int n){
+//                 if(n==1){
+//                         return 1;
+//                 }
+
+
+//                 int temp = fact(n-1);
+//                 return temp*n;
+                
+                
+//         }
+        
+// }
