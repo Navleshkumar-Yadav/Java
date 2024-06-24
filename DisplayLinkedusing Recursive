@@ -1,0 +1,47 @@
+class Node{
+        int val;
+        Node next;
+        Node(int val){
+                this.val=val;
+                
+
+        }
+}
+public class ListNodeClass {
+        public static void print(Node head){
+                Node temp = head;
+                while(temp!=null){
+                        System.out.print(temp.val+" ");
+                        temp = temp.next;
+                }
+
+        }
+        public static void displayRecursive(Node head){
+                if(head==null) return;
+                displayRecursive(head.next);
+                System.out.println(head.val);
+                // display(head.next);
+
+        }
+
+        public static void main(String[] args) {
+                Node c1 = new Node(1000);
+                Node b1 = new Node(2000);
+                Node d1 = new Node(3000);
+                Node e1 = new Node(4000);
+                Node  f1= new Node(5000);
+                Node g1 = new Node(6000);
+                Node h1 = new Node(7000);
+                c1.next=b1;
+                b1.next=d1;
+                d1.next=e1;
+                e1.next=f1;
+                f1.next=g1;
+                g1.next=h1;
+                
+                displayRecursive(c1);
+
+
+        
+        }
+}
