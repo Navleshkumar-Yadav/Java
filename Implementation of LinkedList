@@ -1,0 +1,23 @@
+class Node{
+        int val;
+        Node next;
+        Node(int val){
+                this.val=val;
+                
+        }
+}
+public class ListNodeClass {
+        public static void main(String[] args) {
+                Node q = new Node(100);
+              
+                Node b = new Node(200);
+             
+                q.next=b;
+                System.out.println(b);
+                System.out.println(q.next);
+                System.out.println(q.next.val);
+                System.out.println(q.val);
+                System.out.println(b.val);
+        }
+        
+}
